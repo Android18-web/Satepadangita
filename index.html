@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sate Ayam Padang ITA - Lezatnya Sate Asli Padang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner99.png') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .sate-menu-item {
+            transition: all 0.3s ease;
+        }
+        
+        .sate-menu-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .promo-banner {
+            background-color: #1e40af;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Promo Banner Jasa Pembuatan Website -->
+    <div class="promo-banner">
+        <p>🚀 Jasa Pembuatan Website Portfolio Sederhana mulai dari Rp 300.000. 
+        <a href="https://wa.me/6281375660995?text=Saya%20tertarik%20dengan%20jasa%20pembuatan%20website" 
+           target="_blank" 
+           class="font-bold underline hover:text-yellow-300">
+            Hubungi Kami via WhatsApp (081375660995)
+        </a></p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-yellow-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="banner1.jpg" alt="Logo Sate Ayam Padang ITA - Gambar sate ayam dengan warna dominan kuning" class="h-12" />
+                    <a href="#" class="text-xl font-bold">Sate Ayam Padang ITA</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="hover:text-yellow-200">Beranda</a>
+                    <a href="#menu" class="hover:text-yellow-200">Menu</a>
+                    <a href="#tentang" class="hover:text-yellow-200">Tentang Kami</a>
+                    <a href="#kontak" class="hover:text-yellow-200">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round, " stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden bg-yellow-700 text-white">
+        <a href="#" class="block py-2 px-4 hover:bg-yellow-600">Beranda</a,
+        <a href="#menu" class="block py-2 px-4 hover:bg-yellow-600">Menu</a>
+        <a href="#tentang" class="block py-2 px-4 hover:bg-yellow-600">Tentang Kami</a>
+        <a href="#kontak" class="block py-2 px-4 hover:bg-yellow-600">Kontak</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Sate Ayam Padang ITA</h1>
+            <p class="text-xl md:text-2xl mb-8">Keaslian Rasa Padang dalam Setiap Tusukan</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://food.grab.com/id/id/" target="_blank" class="cta-button bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full">
+                    Pesan via GrabFood <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a href="https://wa.me/6281375660995" target="_blank" class="cta-button bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full">
+                    Pesan via WhatsApp <i class="fab fa-whatsapp ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Menu Andalan Kami</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sate Ayam per Tusuk -->
+                <div class="sate-menu-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative pb-3/4">
+                        <img src="sate2.jpg" alt="Sate ayam per tusuk dengan bumbu kacang kental khas Padang" class="w-full h-64 object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Sate Ayam Padang</h3>
+                        <p class="mt-2 text-gray-600">Sate Padang Kuah Kacang dan Kuah Tepung Yang Nikmat.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-yellow-600">Rp12.000</span>
+                            <button class="px-4 py-2 bg-yellow-600 text-white rounded-full hover:bg-yellow-700">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paket Sate -->
+                <div class="sate-menu-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative pb-3/4">
+                        <img src="sate3.jpg" alt="Sate Ayam Pertusuk ayam Padang dengan nasi, lontong, sambal, dan lalapan" class="w-full h-64 object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Sate Ayam Pertusuk</h3>
+                        <p class="mt-2 text-gray-600">Sate pertusuk untuk menambah selera anda untuk menyantap sate ayam padang.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-yellow-600">Rp2.500</span>
+                            <button class="px-4 py-2 bg-yellow-600 text-white rounded-full hover:bg-yellow-700">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Teh Manis -->
+                <div class="sate-menu-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative pb-3/4">
+                        <img src="minuman.jpg" alt="Gelas teh manis panas dan dingin dengan daun teh asli dan irisan lemon" class="w-full h-64 object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Teh Manis Panas dan Dingin</h3>
+                        <p class="mt-2 text-gray-600">Teh Manis panas dan Teh Manis Dingin Menemani Makanan Anda semakin Nikmat.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-bold text-yellow-600">Rp5.000</span>
+                            <button class="px-4 py-2 bg-yellow-600 text-white rounded-full hover:bg-yellow-700">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="tentang.jpg" alt="Rumah adat Padang dengan atap khas Minangkabau berwarna hitam dengan ukiran tradisional" class="w-full rounded-lg shadow-lg" />
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Tentang Sate Ayam Padang ITA</h2>
+                    <p class="text-gray-600 mb-4">Berawal dari kecintaan terhadap kuliner tradisional Padang, Sate Ayam Padang ITA hadir untuk mempersembahkan cita rasa asli Padang yang autentik.</p>
+                    <p class="text-gray-600 mb-4">Kami menggunakan bahan baku pilihan dan rempah-rempah berkualitas tinggi yang diracik menurut resep turun-temurun keluarga Padang.</p>
+                    <p class="text-gray-600">Setiap tusukan sate kami diolah dengan penuh cinta dan dipanggang dengan teknik khusus untuk menghasilkan cita rasa yang sempurna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section id="kontak" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Kontak dan Lokasi</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-yellow-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-yellow-700 mb-4">Hubungi Kami</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 pt-1">
+                                    <i class="fas fa-phone-alt text-yellow-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-gray-600">Telepon/WhatsApp</p>
+                                    <p class="text-gray-800 font-medium">+62 813-7566-0995</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 pt-1">
+                                    <i class="fab fa-instagram text-yellow-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-gray-600">Instagram</p>
+                                    <a href="https://instagram.com" target="_blank" class="text-yellow-600 hover:underline">@sateayampadangita</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 pt-1">
+                                    <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-gray-600">Alamat</p>
+                                    <p class="text-gray-800 font-medium">Jl. S. Parman No. 127, Kel. Pasar Belakang, Kec. Sibolga Kota, Kode Pos 22523</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 pt-1">
+                                    <i class="fas fa-clock text-yellow-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-gray-600">Jam Buka</p>
+                                    <p class="text-gray-800 font-medium">Senin - Minggu 07.00 - 21.00 WIB</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <a href="https://wa.me/6281375660995" target="_blank" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="h-full bg-gray-100 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.647270389474!2d98.78094607409463!3d1.7576247580508417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3029151c2e6cc5df%3A0x68e3b19c51991e85!2sJl.%20S.%20Parman%20No.127%2C%20Pasar%20Belakang%2C%20Kec.%20Sibolga%20Kota%2C%20Kota%20Sibolga%2C%20Sumatera%20Utara%2022523!5e0!3m2!1sid!2sid!4v1688900123456!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="min-h-96"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pesanan Partai Kecil dan Besar -->
+    <section class="py-16 bg-yellow-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Menerima Pesanan Partai Kecil dan Besar</h2>
+                <p class="text-gray-600 mt-4">Kami menerima pesanan untuk berbagai acara dan kebutuhan Anda</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Partai Kecil -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-yellow-200">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-home text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Partai Kecil</h3>
+                        <p class="text-gray-600 mb-4">
+                            Untuk acara keluarga, arisan, atau pertemuan kecil (minimal 30 tusuk)
+                        </p>
+                        <ul class="text-left text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                                Pesanan mulai dari 30 - 100 tusuk
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                                Harga khusus untuk pesanan di atas 50 tusuk
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/6281375660995?text=Saya%20ingin%20pesan%20sate%20untuk%20acara%20kecil" 
+                           class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Partai Besar -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-yellow-200">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Partai Besar</h3>
+                        <p class="text-gray-600 mb-4">
+                            Untuk pernikahan, syukuran, atau acara perusahaan (minimal 100 tusuk)
+                        </p>
+                        <ul class="text-left text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                                Pesanan mulai dari 100 tusuk
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                                Diskon khusus untuk pesanan di atas 200 tusuk
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                                Konsultasi pesanannya seperti apa ?
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/6281375660995?text=Saya%20ingin%20pesan%20sate%20untuk%20acara%20besar" 
+                           class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Terima kasih telah memilih Sate Ayam Padang ITA</p>
+                <p class="text-gray-600">Kami berkomitmen memberikan pelayanan terbaik dan cita rasa autentik khas Padang</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281375660995" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-700 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="terakhir.jpg" alt="Logo mini Sate Ayam Padang ITA" class="h-10 mr-2" />
+                        <span class="text-xl font-bold">Sate Ayam Padang ITA</span>
+                    </div>
+                    <p class="mt-2 text-yellow-200">Rasa Autentik Padang di Setiap Gigitan</p>
+                </div>
+                <div class="text-sm text-yellow-200">
+                    &copy; <span id="copyright-year"></span> Sate Ayam Padang ITA. All Rights Reserved.
+                    <div class="mt-2">
+                        Dibuat dengan ❤ oleh <a href="https://wa.me/6281375660995?text=Saya%20tertarik%20dengan%20jasa%20pembuatan%20website" class="hover:underline">Iskandar Muda Simbolon, S.Kom</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Order buttons
+        document.querySelectorAll('.sate-menu-item button').forEach(button => {
+            button.addEventListener('click', function() {
+                window.open('https://wa.me/6281375660995?text=Halo%20Sate%20Ayam%20Padang%20ITA,%20saya%20ingin%20memesan:', '_blank');
+            });
+        });
+
+        // Update copyright year automatically
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
