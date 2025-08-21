@@ -341,179 +341,197 @@
         </div>
     </section>
 
-<!-- =========================
-         FAQ SECTION
-========================= -->
-<section id="faq" class="py-16 bg-gray-100">
-  <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-lg">
-    <h2 class="text-3xl font-bold text-center text-yellow-700 mb-8">🍢 FAQ – Sate Ayam Padang ITA</h2>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – Sate Ayam Padang ITA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    .accordion-content.open {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
 
-    <!-- FAQ Item -->
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        1. Apakah menerima pesanan antar (delivery)?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Ya, kami melayani pesanan antar melalui GrabFood dan WhatsApp. Untuk area <b>Sibolga & Pandan</b>, bisa langsung pesan via WhatsApp.
-      </div>
-    </div>
+  <section id="faq" class="py-16">
+    <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-lg">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-yellow-700 mb-8">🍢 FAQ – Sate Ayam Padang ITA</h2>
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        2. Minimal pemesanan berapa?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        <ul class="list-disc ml-6">
-          <li><b>Pesanan reguler:</b> minimal 5 bungkus (Sibolga & Pandan)</li>
-          <li><b>Partai kecil:</b> minimal 30 tusuk (arisan, keluarga, pertemuan)</li>
-          <li><b>Partai besar:</b> minimal 100 tusuk (nikahan, syukuran, perusahaan)</li>
-        </ul>
-      </div>
-    </div>
+      <div class="space-y-4 text-sm text-gray-700">
+        <!-- FAQ Item 1 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            1. Apakah menerima pesanan antar (delivery)?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Ya, kami melayani pesanan antar melalui GrabFood dan WhatsApp. Untuk area <b>Sibolga & Pandan</b>, bisa langsung pesan via WhatsApp.
+          </div>
+        </div>
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        3. Apakah tersedia paket hemat?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Ya, ada paket hemat untuk pembelian mulai dari <b>50 tusuk ke atas</b> dengan harga khusus.
-      </div>
-    </div>
+        <!-- FAQ Item 2 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            2. Minimal pemesanan berapa?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            <ul class="list-disc ml-5">
+              <li><b>Pesanan reguler:</b> minimal 5 bungkus (Sibolga & Pandan)</li>
+              <li><b>Partai kecil:</b> minimal 30 tusuk (arisan, keluarga, pertemuan)</li>
+              <li><b>Partai besar:</b> minimal 100 tusuk (nikahan, syukuran, perusahaan)</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        4. Bagaimana cara memesan via WhatsApp?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Cukup kirim pesan sesuai format berikut:<br><br>
-        <pre class="bg-gray-100 p-3 rounded-lg text-sm whitespace-pre-wrap">
+        <!-- FAQ Item 3 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            3. Apakah tersedia paket hemat?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Ya, ada paket hemat untuk pembelian mulai dari <b>50 tusuk ke atas</b> dengan harga khusus.
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            4. Bagaimana cara memesan via WhatsApp?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Cukup kirim pesan sesuai format berikut:<br><br>
+            <pre class="bg-gray-100 p-3 rounded-md whitespace-pre-wrap text-xs leading-relaxed">
 📦 FORM PEMESANAN
 Nama :
 Alamat Lengkap :
 Jumlah Pesanan :
 Waktu Pengantaran :
 Metode Pembayaran : Transfer / COD
-        </pre>
-        ⚠️ Catatan:<br>
-        - Untuk pelanggan <b>baru</b>, pesanan diproses setelah ada <b>DP/transfer</b>.<br>
-        - <b>COD</b> hanya berlaku untuk pelanggan tetap.
+            </pre>
+            ⚠️ <b>Catatan:</b><br>
+            - Untuk pelanggan <b>baru</b>, pesanan diproses setelah ada <b>DP/transfer</b>.<br>
+            - <b>COD</b> hanya berlaku untuk pelanggan tetap.
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            5. Apa saja metode pembayarannya?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            - Transfer Bank<br>
+            - E-Wallet (DANA, OVO, GoPay, ShopeePay)<br>
+            - COD (khusus pelanggan tetap)
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            6. Jam operasionalnya kapan?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Kami buka setiap hari, <b>Senin – Minggu pukul 07.00 – 21.00 WIB</b>.
+          </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            7. Bagaimana cara memesan untuk acara besar?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Untuk acara besar, hubungi kami via WhatsApp minimal <b>H-2 sebelum acara</b>. Kami akan diskusikan jumlah pesanan, harga spesial, serta metode pengiriman.
+          </div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            8. Apakah menerima pesanan mendadak?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Untuk jumlah kecil (≤10 bungkus) biasanya bisa diproses cepat.<br>
+            Untuk partai besar, sebaiknya pesan minimal <b>2 hari sebelumnya</b>.
+          </div>
+        </div>
+
+        <!-- FAQ Item 9 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            9. Apakah bisa request menu khusus?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Bisa 👍 silakan tulis request khusus saat pemesanan (misalnya lebih pedas / tanpa bumbu kacang).
+          </div>
+        </div>
+
+        <!-- FAQ Item 10 -->
+        <div class="border-b pb-2">
+          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+            10. Apakah sate bisa dikirim ke luar Sibolga & Pandan?
+            <span class="text-lg">+</span>
+          </button>
+          <div class="accordion-content text-gray-600 leading-relaxed">
+            Untuk sementara, pengantaran hanya meliputi area <b>Sibolga & Pandan</b>.<br>
+            Untuk luar kota bisa dibicarakan khusus (tergantung jumlah pesanan).
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        5. Apa saja metode pembayarannya?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        - Transfer Bank<br>
-        - E-Wallet (DANA, OVO, GoPay, ShopeePay)<br>
-        - COD (khusus pelanggan tetap)
-      </div>
-    </div>
+  <script>
+    const buttons = document.querySelectorAll(".accordion-btn");
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        6. Jam operasionalnya kapan?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Kami buka setiap hari, <b>Senin – Minggu pukul 07.00 – 21.00 WIB</b>.
-      </div>
-    </div>
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const allContents = document.querySelectorAll(".accordion-content");
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        7. Bagaimana cara memesan untuk acara besar?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Untuk acara besar, hubungi kami via WhatsApp minimal <b>H-2 sebelum acara</b>. 
-        Kami akan diskusikan jumlah pesanan, harga spesial, serta metode pengiriman.
-      </div>
-    </div>
+        allContents.forEach(c => {
+          if (c !== content) {
+            c.style.maxHeight = null;
+            c.classList.remove("open");
+            c.previousElementSibling.querySelector("span").textContent = "+";
+          }
+        });
 
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        8. Apakah menerima pesanan mendadak?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Untuk jumlah kecil (≤10 bungkus) biasanya bisa diproses cepat.<br>
-        Untuk partai besar, sebaiknya pesan minimal <b>2 hari sebelumnya</b>.
-      </div>
-    </div>
-
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        9. Apakah bisa request menu khusus?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Bisa 👍 silakan tulis request khusus saat pemesanan (misalnya lebih pedas / tanpa bumbu kacang).
-      </div>
-    </div>
-
-    <div>
-      <button class="w-full flex justify-between items-center py-4 text-left font-medium text-gray-800 hover:text-yellow-700 accordion-btn">
-        10. Apakah sate bisa dikirim ke luar Sibolga & Pandan?
-        <span class="text-xl">+</span>
-      </button>
-      <div class="accordion-content text-gray-600">
-        Untuk sementara, pengantaran hanya meliputi area <b>Sibolga & Pandan</b>.<br>
-        Untuk luar kota bisa dibicarakan khusus (tergantung jumlah pesanan).
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Accordion Script -->
-<script>
-  const buttons = document.querySelectorAll(".accordion-btn");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      const allContents = document.querySelectorAll(".accordion-content");
-
-      allContents.forEach(c => {
-        if (c !== content) {
-          c.style.maxHeight = null;
-          c.classList.remove("open");
-          c.previousElementSibling.querySelector("span").textContent = "+";
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.classList.remove("open");
+          btn.querySelector("span").textContent = "+";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.classList.add("open");
+          btn
+          btn.querySelector("span").textContent = "−";
         }
       });
-
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-        content.classList.remove("open");
-        btn.querySelector("span").textContent = "+";
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        content.classList.add("open");
-        btn.querySelector("span").textContent = "−";
-      }
     });
-  });
-</script>
+  </script>
 
-<!-- Accordion Styles (add to your global <style> if belum ada) -->
-<style>
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-  }
-  .accordion-content.open {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-</style>
+</body>
+</html>
+
 
 
 
@@ -575,6 +593,7 @@ Metode Pembayaran : Transfer / COD
     </script>
 </body>
 </html>
+
 
 
 
