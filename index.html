@@ -377,110 +377,218 @@
 </head>
 <body class="bg-gray-100 font-sans antialiased">
 
-  <!-- FAQ Section -->
-  <section id="faq" class="py-16">
-    <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-lg">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-yellow-700 mb-8">🍢 FAQ – Sate Ayam Padang ITA</h2>
+  <!-- FAQ + Kalender Section -->
+<section id="faq" class="py-16 bg-gradient-to-br from-yellow-50 to-yellow-100">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+    
+    <!-- FAQ -->
+    <div class="md:col-span-2 bg-white rounded-2xl shadow-xl p-8">
+      <h2 class="text-3xl font-extrabold text-center text-yellow-700 mb-10">
+        🍢 Pertanyaan yang Sering Diajukan
+      </h2>
 
-      <div class="space-y-4 text-sm text-gray-700">
-        <!-- FAQ Item 1 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+      <div class="space-y-3">
+        <!-- FAQ Item -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             1. Apakah menerima pesanan antar (delivery)?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            Ya, kami melayani pesanan antar melalui GrabFood dan WhatsApp. Untuk area <b>Sibolga & Pandan</b>, bisa langsung pesan via WhatsApp.
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            Ya, kami melayani pesanan antar melalui GrabFood dan WhatsApp. 
+            Untuk area <b>Sibolga & Pandan</b>, bisa langsung pesan via WhatsApp.
           </div>
         </div>
 
-        <!-- FAQ Item 2 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+        <!-- FAQ 2 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             2. Minimal pemesanan berapa?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            <ul class="list-disc ml-5">
-              <li><b>Pesanan reguler:</b> minimal 3 bungkus untuk wilayah Sibolga Perbatasan Pintu Angin Sibolga dan Selamat Datang Sarudik</li>
-              <li><b>Pesanan reguler:</b> minimal 5 bungkus untuk wilayah Pandan Perbatasan pandan Simpang AMD </li>
-              <li><b>Partai kecil:</b> minimal 20 Bungkus (arisan, keluarga, pertemuan)</li>
-              <li><b>Partai besar:</b> minimal 50 Bungkus (nikahan, syukuran, perusahaan)</li>
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            <ul class="list-disc ml-5 space-y-1">
+              <li><b>Reguler:</b> min 3 bungkus (Sibolga), 5 bungkus (Pandan)</li>
+              <li><b>Partai kecil:</b> minimal 30 tusuk</li>
+              <li><b>Partai besar:</b> minimal 100 tusuk</li>
             </ul>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+        <!-- FAQ 3 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             3. Bagaimana cara memesan via WhatsApp?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            Cukup kirim pesan sesuai format berikut:<br><br>
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            Cukup kirim pesan sesuai format:<br><br>
             <pre class="bg-gray-100 p-3 rounded-md whitespace-pre-wrap text-xs leading-relaxed">
 📦 FORM PEMESANAN
-Nama           :
-Alamat Lengkap :
+Nama :
+Alamat :
 Jumlah Pesanan :
-Waktu Pengantaran :
-Metode Pembayaran : Transfer / COD
+Waktu Antar :
+Metode Bayar : Transfer / COD
             </pre>
             ⚠️ <b>Catatan:</b><br>
-            - Untuk pelanggan <b>baru</b>, pesanan diproses setelah ada <b>DP/transfer setengah harga dari pesanan</b>.<br>
-            - <b>COD</b> untuk pelanggan tetap tidak perlu DP.
+            - Pelanggan baru: wajib DP/transfer setengah harga.<br>
+            - COD hanya untuk pelanggan tetap.
           </div>
         </div>
 
-        <!-- FAQ Item 4 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+        <!-- FAQ 4 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             4. Apa saja metode pembayarannya?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            - Transfer Bank : BSI,BRI <br>
-            - E-Wallet (DANA, OVO, GoPay, )<br>
-            - COD (khusus pelanggan tetap, Bayar Di Tempat aja)
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            - Transfer Bank<br>
+            - E-Wallet (DANA, OVO, GoPay, ShopeePay)<br>
+            - COD (khusus pelanggan tetap)
           </div>
         </div>
 
-        <!-- FAQ Item 5 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+        <!-- FAQ 5 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             5. Jam operasionalnya kapan?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            Kami buka setiap hari, <b>Senin – Minggu pukul 07.00 – 21.00 WIB</b>.
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            Kami buka setiap hari <b>07.00 – 21.00 WIB</b>.
           </div>
         </div>
 
-        <!-- FAQ Item 6 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+        <!-- FAQ 6 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             6. Bagaimana cara memesan untuk acara besar?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            Untuk acara besar, hubungi kami via WhatsApp minimal <b>H-2 sebelum acara</b>. Kami akan diskusikan jumlah pesanan.
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            Hubungi via WhatsApp minimal <b>H-2 sebelum acara</b> agar bisa dipersiapkan.
           </div>
         </div>
 
-        <!-- FAQ Item 7 -->
-        <div class="border-b pb-2">
-          <button class="w-full flex justify-between items-center py-2 text-left font-medium accordion-btn text-gray-800 hover:text-yellow-700">
+        <!-- FAQ 7 -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 hover:bg-yellow-50 transition accordion-btn">
             7. Apakah menerima pesanan mendadak?
-            <span class="text-lg">+</span>
+            <span class="toggle-icon text-xl font-bold">+</span>
           </button>
-          <div class="accordion-content text-gray-600 leading-relaxed">
-            Untuk jumlah kecil (≤10 bungkus) biasanya bisa diproses cepat.<br>
-            Untuk partai besar, sebaiknya pesan minimal <b>2 hari sebelumnya</b>.
+          <div class="accordion-content hidden px-4 pb-4 text-gray-600 leading-relaxed text-sm">
+            - Jumlah kecil (≤10 bungkus): bisa cepat diproses.<br>
+            - Jumlah besar: pesan minimal <b>2 hari sebelumnya</b>.
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Kalender + Jam Digital -->
+    <div class="bg-white rounded-2xl shadow-xl p-6">
+      <h3 class="text-xl font-bold text-yellow-700 text-center mb-4">📅 Kalender</h3>
+
+      <!-- Digital Clock -->
+      <div id="digital-clock" class="text-center text-3xl font-mono font-bold text-yellow-600 mb-6"></div>
+
+      <!-- Kalender -->
+      <div id="calendar" class="text-center text-sm text-gray-700"></div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Accordion FAQ
+  document.querySelectorAll('.accordion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.toggle-icon');
+
+      // Tutup semua dulu
+      document.querySelectorAll('.accordion-content').forEach(c => {
+        if (c !== content) c.classList.add('hidden');
+      });
+      document.querySelectorAll('.toggle-icon').forEach(i => {
+        if (i !== icon) i.textContent = '+';
+      });
+
+      // Toggle
+      content.classList.toggle('hidden');
+      icon.textContent = content.classList.contains('hidden') ? '+' : '-';
+    });
+  });
+
+  // Kalender Interaktif
+  let currentMonth = new Date().getMonth();
+  let currentYear = new Date().getFullYear();
+
+  function generateCalendar(month, year) {
+    const today = new Date();
+    const monthName = new Date(year, month).toLocaleString('id-ID', { month: 'long' });
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    let html = `
+      <div class="flex justify-between items-center mb-3">
+        <button onclick="prevMonth()" class="px-2 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700">«</button>
+        <div class="font-semibold">${monthName} ${year}</div>
+        <button onclick="nextMonth()" class="px-2 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700">»</button>
+      </div>
+    `;
+
+    html += `<div class="grid grid-cols-7 text-xs font-bold text-yellow-700">
+              <div>M</div><div>S</div><div>S</div><div>R</div><div>K</div><div>J</div><div>S</div>
+            </div><div class="grid grid-cols-7 gap-1 mt-1">`;
+
+    // kosong sebelum tanggal 1
+    for (let i = 1; i < (firstDay === 0 ? 7 : firstDay); i++) {
+      html += `<div></div>`;
+    }
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const isToday = d === today.getDate() && month === today.getMonth() && year === today.getFullYear();
+      html += `<div class="p-2 rounded-lg text-center ${isToday ? 'bg-yellow-600 text-white font-bold' : 'hover:bg-yellow-100'}">${d}</div>`;
+    }
+
+    html += `</div>`;
+    document.getElementById("calendar").innerHTML = html;
+  }
+
+  function prevMonth() {
+    currentMonth--;
+    if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+    generateCalendar(currentMonth, currentYear);
+  }
+
+  function nextMonth() {
+    currentMonth++;
+    if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+    generateCalendar(currentMonth, currentYear);
+  }
+
+  generateCalendar(currentMonth, currentYear);
+
+  // Jam Digital
+  function updateClock() {
+    const now = new Date();
+    let h = now.getHours().toString().padStart(2, "0");
+    let m = now.getMinutes().toString().padStart(2, "0");
+    let s = now.getSeconds().toString().padStart(2, "0");
+    document.getElementById("digital-clock").textContent = `${h}:${m}:${s} WIB`;
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+
+
+
+
+
+    
 
   <!-- Visitor Counter -->
   <footer class="bg-white border-t border-gray-300 py-6 text-center">
@@ -571,6 +679,7 @@ Metode Pembayaran : Transfer / COD
   </script>
 </body>
 </html>
+
 
 
 
