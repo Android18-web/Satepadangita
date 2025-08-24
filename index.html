@@ -347,7 +347,7 @@
   <div class="flex flex-col items-center space-y-2">
     <!-- Icon Rumah Adat -->
     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-red-600" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="2">
-      <!-- Atap rumah -->
+      <!-- Atap -->
       <path d="M2 30 L32 6 L62 30 Z" fill="#DC2626" stroke="#991B1B" stroke-width="3"/>
       <!-- Badan rumah -->
       <rect x="10" y="30" width="44" height="28" fill="#FACC15" stroke="#92400E" stroke-width="3"/>
@@ -362,14 +362,13 @@
 
 <!-- Visitor Counter Script -->
 <script>
-  // Ganti URL di bawah sesuai alamat GitHub Pages kamu
-  // contoh: username.github.io/repo-name
-  fetch('https://android18-web.github.io/Satepadangita/')
+  fetch('https://api.countapi.xyz/hit/satepadangita/visits')
     .then(res => res.json())
     .then(res => {
       document.getElementById('visitor-count').innerText = res.value;
     });
 </script>
+
 
 
 
@@ -600,6 +599,7 @@ Metode Pembayaran : Transfer / COD
     </script>
 </body>
 </html>
+
 
 
 
