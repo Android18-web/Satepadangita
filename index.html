@@ -342,6 +342,7 @@
     </section>
 
 
+<!-- Visitor Counter Footer -->
 <footer class="bg-white border-t border-gray-300 py-6 text-center">
   <div class="flex flex-col items-center space-y-2">
     <!-- Icon Rumah Adat -->
@@ -359,14 +360,17 @@
   </div>
 </footer>
 
+<!-- Visitor Counter Script -->
 <script>
-  // Hitung visitor pakai CountAPI
-  fetch('https://api.countapi.xyz/hit/namawebanda.com/visitor')
+  // Ganti URL di bawah sesuai alamat GitHub Pages kamu
+  // contoh: username.github.io/repo-name
+  fetch('https://android18-web.github.io/Satepadangita/')
     .then(res => res.json())
     .then(res => {
       document.getElementById('visitor-count').innerText = res.value;
     });
 </script>
+
 
 
     
@@ -596,6 +600,7 @@ Metode Pembayaran : Transfer / COD
     </script>
 </body>
 </html>
+
 
 
 
