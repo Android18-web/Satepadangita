@@ -68,6 +68,19 @@
             text-align: center;
             font-size: 14px;
         }
+
+  .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    .accordion-content.open {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+
+        
     </style>
 </head>
 <body>
@@ -274,6 +287,7 @@
                 <p class="text-gray-600 mt-4">Kami menerima pesanan untuk berbagai acara dan kebutuhan Anda</p>
             </div>
             
+            
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Partai Kecil -->
                 <div class="bg-white p-8 rounded-xl shadow-md border border-yellow-200">
@@ -340,16 +354,7 @@
   
 
   
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.3s ease;
-    }
-    .accordion-content.open {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-    
+  
 </style>
 
   <!-- FAQ + Kalender Section -->
@@ -591,6 +596,7 @@ Metode Bayar : Transfer / COD
   </script>
 </body>
 </html>
+
 
 
 
